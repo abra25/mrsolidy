@@ -1,0 +1,313 @@
+/**************************************************
+********           MrSolidy STYLE          ********                             
+---------------------------------------------------
+********  Coding@scom ft-003   app.Vr1     ********                              
+---------------------------------------------------                                                 
+********  https://MrSolidy.netlfy.com/     ********                   
+/**************************************************
+*/*{
+    list-style: none;
+    text-decoration: none;
+}
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.content{
+    display: none;
+}
+/*---- navbar style  ----*/
+.navbar{
+    width: 100%;
+    padding: 8px 15px;
+    align-items: center;
+    position: relative;
+    background: #fff;
+    justify-content: space-between;
+    border-bottom: 1px solid #ff5614;
+    transition: pannding,background-color  .43s linear;
+    
+}
+.brand img{
+    height: 6vh;
+    width: 6vh;
+    transition: none;
+    border: 1px solid transparent;
+    box-shadow: 0 0 15px #01025027;
+}
+.brand h6{
+    color: #00007c;
+    margin: 0 7px;
+    font-size: 20px;
+}
+.nav{
+    display: flex;
+    position: relative;
+}
+.nav li{
+    cursor: pointer;
+    margin: 0 12px;
+    border-radius: 8px;
+    align-items: center;
+    padding: 3px 8px 6px 8px;
+    line-height: 17px;
+}
+.nav li a{
+    color: #00007c;
+    text-decoration: none;
+    transition: color .35s;
+}
+.nav li a:hover,.navbar-shrink nav li a:hover,.mobile-menu:hover{
+    color: #ff9f79;
+}
+.active{
+    background: transparent;
+    box-shadow: 0 0 12px #00012c27;
+}
+.mobile-menu{
+    display: none;
+    color: #00007c;
+    right: 10px;
+    position: absolute;
+    padding: 2px 3px;
+    line-height: 2px;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 4px;
+    transition:  color .32s;
+    box-shadow:   0 0 12px #00012c27;
+}
+#menuIcon{
+    padding: 0;
+    font-size: 1.8rem;
+    line-height: 0;
+}
+/* navbar shriking effects */
+.navbar-shrink{
+    padding: 0 15px;
+    width: 100%;
+    align-items: center;
+    color: #00007c;
+    background: #ff5614;
+    box-shadow: 0 0 10px #01025027;
+}
+.navbar-shrink .navbar{
+    padding: 0 15px;
+    align-items: center;
+}
+.navbar-shrink .brand img{
+    height: 5vh;
+    width: 5vh;
+    box-shadow: 0 0 12px #00012c27;
+}
+.navbar-shrink .brand h6{
+    font-size: 16px;
+}
+.navbar-shrink .brand  strong,.nav li a:active,
+.mobile-menu:active,.navbar-shrink .nav li a:active{
+    color: #ff5614;
+}
+.navbar-shrink .nav li{
+    padding: 2px 8px 3px 8px;
+}
+.navbar-shrink .nav li a{
+    font-size: 14px;
+    color: #fff;
+    transition: color .45s ease;
+}
+.navbar-shrink .nav li a:hover{
+    color: #00007c;
+}
+.navbar-shrink .theme-btn{
+    padding: 0 14px;
+    font-size: 16px;
+}
+.navbar-shrink .theme-btn:hover{
+    color: #fff;
+}
+.navbar-shrink #menuIcon{
+    color: #fff;
+    font-size: 1.5rem;
+}
+/* dark/light theme button*/
+.theme-btn{
+    margin: 0;
+    border: none;
+    padding: 0 14px;
+    border-radius: 13px;
+    color: #00007c;
+    font-size: 19px;
+    background: transparent;
+    transition: color all .55s ease;
+    box-shadow: 0 0 5px #01025027;
+}
+.theme-btn:hover{
+    color:  #ff9f79;
+}
+.theme-btn:active{
+    color: #fff;
+    background: #ff5614;
+}
+/* dark theme */
+.dark,.dark .hero ,.dark .hero-title,.dark .card,.dark footer{
+    color: #fff;
+    background: #00000c;
+}
+#dark-mode,.dark #light-mode{
+    display: none;
+}
+.dark #dark-mode{
+    display: block; 
+}
+.dark .nav li a,.dark .theme-btn,.dark{
+    color: #fff;
+}
+.dark .theme-btn,.dark .navbar-shrink,.dark .brand img{
+    box-shadow: 0 0 12px #3cffef3a;
+}
+.dark .navbar-shrink .brand h6{
+    color: #00007c;
+}
+.dark .navbar-shrink .theme-btn,.dark .navbar-shrink .brand img{
+    box-shadow: 0 0 12px #00012c27;
+}
+/*----------  responsive navbar style ------------*/
+@media (max-width: 850px){
+    .navbar{
+        padding: 6px 6px;
+        width: 100;
+        margin: 0;
+        align-items: center;
+    }
+    .nav{
+        top: 8.5vh;
+        margin: 0;
+        width: 60%;
+        height: 44vh;
+        padding: 0 2px 0 2px;
+        position: absolute;
+        flex-direction: column;
+        background: #ff5614;
+        right: -1000px;
+        transition: right .45s ease;
+        border-radius: 3px;
+        box-shadow: 0 0 12px #01025027;
+    }
+    .nav li{
+        margin: 0;
+        padding: 8px 0;
+        width: 100%;
+        text-align: center;
+    }
+    .nav li a{
+        font-size: 0.95rem;
+    }
+    .nav li a,.theme-btn{
+        color: #fff;
+    }
+    .nav li a:hover{
+        color: #00007c;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .theme-btn{
+        position: absolute;
+        right: 25%;
+        top: 46vh;
+        visibility: hidden;
+        padding: 0 14px;
+        font-size: 16px;
+        transition: none;
+        transform: none;
+    }
+    .navbar-shrink .navbar{
+        padding: 3px 10px;
+        align-items: center;
+    }
+    .navbar-shrink .nav{
+        top: 7.6vh;  
+    }
+    .navbar-shrink .nav li{
+        padding: 8px 0;
+    }
+    .navbar-shrink .nav li a{
+        font-size: 0.95rem;
+    }
+    .shonav{
+        right: 0;
+    }
+    .visible{
+        display: block;
+        transition: .46s ease;
+        transition-delay: .40s;
+    }
+} 
+/* hero*/
+.hero{
+    position: relative; 
+    width: 100%;
+    padding: 100px 20px;
+    background: #f1f1f1;
+}
+.hero-title {
+    color: #00007c;
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+.hero-subtitle {
+    font-size: 1.3rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+.typing-text {
+      display: inline-block;
+      border-right: 2px solid #3498db;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #343a40;
+      max-width: 100%;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+    @media (min-width: 768px) {
+      .hero-title {
+        font-size: 3.5rem;
+      }
+      .hero-subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+/*----- About ------*/
+.card{
+    box-shadow: 0 0 12px #0000005b;
+}
+
+/*---- Skills -----*/
+
+/*---- Footer -----*/
+footer{
+    background: #e9e9e9;
+    text-align: center;
+}
+
+footer p{
+    margin: 0 auto;
+}
