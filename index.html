@@ -1,171 +1,253 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>MrSolidy/home</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="70x70" href="assets/images/ms_logo.png">
-    <!-- Main Stylesheet -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MrSolidy</title>
+  <!-- Main Stylesheet -->
     <link rel="stylesheet" href="assets/css/Style.css">
+
     <!-- animate stylesheet -->
-     <link rel="stylesheet" href="assets/css/animate.css">
-    <!-- Google Font Stylesheet -->
-    <!-- Fontawesome Stylesheet -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Customized Bootstrap Styles -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
 
-    <!-- offline -->
-
-    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
-<body id="myBody">
+<bodyid="myBody">
 <!-- Loading Screen -->
 <div id="loading-screen">
     <div class="loader"></div>
 </div>
-<!---- Navbar ---->
-<div id="navbar" class="navbar d-flex m-0 fixed-top">
-    <div class="container-fluid">
-        <div class="brand d-block align-items-center m-0 p-0">
-            <h6>Mr<stong id="strong">Solidy</stong></h6>
-        </div>
-        <div class="nav" id="nav">
-            <li class="navLink active"><a href="index.html">Home</a></li>
-            <li class="navLink"><a href="#about">About</a></li>
-            <li class="navLink"><a href="#skills">Skills</a></li>
-            <li class="navLink"><a href="#projects">Projects</a></li>
-            <li class="navLink"><a href="#features">Features</a></li>
-            <li class="navLink"><a href="#contact">Contact</a></li>
-        </div>
-        <div class="mobile-menu" onclick="mobileBtn()">
-            <i class="bi bi-list" id="menuIcon"></i>
-        </div>
-        <button class="theme-btn" onclick="changTheme()">
-            <i class="bi bi-sun" id="light-mode"></i>
-            <i class="bi bi-moon" id="dark-mode"></i>
-        </button>
+
+  <!-- ======== NAVBAR ======== -->
+<header class="navbar">
+  <div class="nav-container">
+    <h1 class="logo">MrSolidy</h1>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-</div>
-<!---- Hero ---->
-<section class="hero">
-    <div class="container">
-      <div data-aos="fade-up">
-        <h2 class="hero-title">Hello! Wellcome, I'm Mr Soliddy <br>Crafting Experiences for the Web</h2>
-        <p class="hero-subtitle">Turning ideas into real-world, beautiful websites & interfaces.</p>
-        <div class="typing-text">Web Developer | Hosting | Graphics</div>
-        <br />
-        <a href="#projects" class="btn btn-primary mt-4" data-aos="fade-up" data-aos-delay="400">Explore My Work</a>
+
+    <!-- Navigation Links -->
+    <nav class="nav-links" id="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+  <!-- ======== HERO ======== -->
+  <section class="hero">
+    <h1>Hi, I'm <span style="color:#facc15;">Mr Solidy</span></h1>
+    <p>Full Stack Developer | Designer | Hosting Expert</p>
+    <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      Hire Me
+    </button>
+  </section>
+
+  <!-- ======== ABOUT ======== -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a full stack developer passionate about creating modern, efficient, and user-centered digital solutions.  
+      I work on everything from design and front-end interfaces to robust back-end systems and cloud deployment.
+    </p>
+  </section>
+
+  <!-- ======== SKILLS ======== -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill-item"><div class="skill-name"><span>HTML</span><span>98%</span></div><div class="progress-bar"><div class="progress" data-width="98%"></div></div></div>
+      <div class="skill-item"><div class="skill-name"><span>CSS</span><span>95%</span></div><div class="progress-bar"><div class="progress" data-width="95%"></div></div></div>
+      <div class="skill-item"><div class="skill-name"><span>Java</span><span>90%</span></div><div class="progress-bar"><div class="progress" data-width="90%"></div></div></div>
+      <div class="skill-item"><div class="skill-name"><span>JavaScript</span><span>85%</span></div><div class="progress-bar"><div class="progress" data-width="85%"></div></div></div>
+      <div class="skill-item"><div class="skill-name"><span>Design</span><span>80%</span></div><div class="progress-bar"><div class="progress" data-width="80%"></div></div></div>
+      <div class="skill-item"><div class="skill-name"><span>Hosting</span><span>78%</span></div><div class="progress-bar"><div class="progress" data-width="78%"></div></div></div>
+      <div class="skill-item"><div class="skill-name"><span>Spring Boot</span><span>75%</span></div><div class="progress-bar"><div class="progress" data-width="75%"></div></div></div>
+      <div class="skill-item"><div class="skill-name"><span>Angular</span><span>70%</span></div><div class="progress-bar"><div class="progress" data-width="70%"></div></div></div>
+      <div class="skill-item"><div class="skill-name"><span>React</span><span>68%</span></div><div class="progress-bar"><div class="progress" data-width="68%"></div></div></div>
+      <div class="skill-item"><div class="skill-name"><span>Laravel</span><span>65%</span></div><div class="progress-bar"><div class="progress" data-width="65%"></div></div></div>
+    </div>
+  </section>
+
+  <!-- ======== SERVICES ======== -->
+  <section id="services">
+    <h2>My Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h4>Website Development</h4>
+        <p>Modern and responsive websites built with best practices.</p>
+        <p class="price">$300 - $1000</p>
+      </div>
+      <div class="service-card">
+        <h4>Web Applications</h4>
+        <p>Powerful, scalable full-stack applications for any need.</p>
+        <p class="price">$800 - $2500</p>
+      </div>
+      <div class="service-card">
+        <h4>UI/UX Design</h4>
+        <p>Beautiful, user-friendly designs that drive engagement.</p>
+        <p class="price">$150 - $700</p>
+      </div>
+      <div class="service-card">
+        <h4>Hosting & Deployment</h4>
+        <p>Reliable and fast hosting for your web projects.</p>
+        <p class="price">$50 - $300</p>
       </div>
     </div>
+  </section>
+
+  <!-- ======== PROJECTS (RESPONSIVE 4-CARD SLIDER) ======== -->
+<section id="projects">
+  <h2>My Projects</h2>
+
+  <div class="slider-container">
+    <div class="slider">
+      <!-- Project 1 -->
+      <div class="slide">
+        <div class="project-card">
+          <img src="assets/images/project-1.PNG" alt="Project 1" />
+          <div class="content">
+            <h4>Websites</h4>
+            <p>A responsive Tour website showcasing various tours and safari located in Tanzania.</p>
+            <a href="https://mascomsafari.netlify.app/" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="slide">
+        <div class="project-card">
+          <img src="assets/images/project-2.PNG" alt="Project 2" />
+          <div class="content">
+            <h4>Admin Dashboard</h4>
+            <p>A modern dashboard with data visualization and user management.</p>
+            <a href="#" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="slide">
+        <div class="project-card">
+          <img src="assets/images/project-3.PNG" alt="Project 3" />
+          <div class="content">
+            <h4>E-commerce Web App</h4>
+            <p>Full-featured online store built with Node.js, Express, and MongoDB.</p>
+            <a href="#" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="slide">
+        <div class="project-card">
+          <img src="assets/images/project-4.PNG" alt="Project 4" />
+          <div class="content">
+            <h4>Web Application</h4>
+            <p>A customer support help desk app for ticket management. Zeco Help desk</p>
+            <a href="#" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="slide">
+        <div class="project-card">
+          <img src="assets/images/project-5.PNG" alt="Project 5" />
+          <div class="content">
+            <h4>React App</h4>
+            <p>Modern SPA built with React and API integration.Local Market Price Tracker</p>
+            <a href="#" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button class="nav prev">&#10094;</button>
+    <button class="nav next">&#10095;</button>
+  </div>
+
+  <!-- Slider Dots -->
+  <div class="dots"></div>
 </section>
-<!---- About ---->
-<section id="about" class="py-5 mt-5 ">
-    <div class="container mt-5">
-      <h2 class="text-center mb-4">About Me</h2>
-      <p class="text-center mb-5">I'm a passionate professional who blends creativity, technical skills, and user-centric design to craft impactful digital experiences.</p>
-      <div class="row text-center">
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <i class="fas fa-code fa-2x mb-3 text-primary"></i>
-              <h4 class="card-title">Web Developer</h4>
-              <p class="card-text">I build responsive and high-performing websites using modern technologies like HTML, CSS, JavaScript, and frameworks like Bootstrap. I focus on performance, accessibility, and SEO best practices.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <i class="fas fa-server fa-2x mb-3 text-success"></i>
-              <h4 class="card-title">Web Hosting</h4>
-              <p class="card-text">I offer affordable and secure hosting solutions tailored for small businesses and personal portfolios. I ensure reliable uptime and fast loading speeds for every project I launch.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow-sm border-0">
-            <div class="card-body">
-              <i class="fas fa-paint-brush fa-2x mb-3 text-danger"></i>
-              <h4 class="card-title">Graphic Designer</h4>
-              <p class="card-text">I design visually compelling graphics, logos, and brand assets that communicate effectively and elevate your business identity. Creativity meets clarity in every design.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+
+  <!-- ======== CONTACT / ORDER SECTION ======== -->
+<section id="contact" class="contact-section">
+  <h2>Request a Project / Order</h2>
+
+  <div class="contact-container">
+    <!-- === Order Form === -->
+    <div class="contact-form">
+      <form id="orderForm">
+        <input type="text" placeholder="Your Name" name="name" required />
+        <input type="email" placeholder="Your Email" name="email" required />
+        <select name="service" required>
+          <option value="">Select a Service</option>
+          <option value="Website Development">Website Development</option>
+          <option value="Web Application">Web Application</option>
+          <option value="Hosting & Maintenance">Hosting & Maintenance</option>
+          <option value="UI/UX Design">UI/UX Design</option>
+        </select>
+        <textarea name="details" rows="4" placeholder="Project details..." required></textarea>
+        <button type="submit">Submit Request</button>
+      </form>
     </div>
-</section>
-<!---- Skills ---->
-<section class="skills-section" id="skills">
-    <div class="container my-5 fade-in p-3" >  
-        <div class="row g-5 align-items-start">
-            <div class="col-md-5">
-                <h2 class="mt-5"> About My Skills</h2>
-                <p>I am a passionate developer and designer skilled in both frontend and backend technologies including HTML, CSS, JavaScript, React, Java, and Spring Boot. My experience in graphic design adds creative strength to my development process.</p>
-            </div>
-            <div class="col-md-7">
-                <h2 class="mt-5">Technical Skills</h2>
-                <div class="mb-4">
-                    <label class="form-label"><i class="fab fa-html5 me-2 text-danger"></i>HTML</label>
-                <div class="progress">
-                   <div class="progress-bar bg-primary" style="width: 90%;">90%</div>
-                </div>
-            </div>
-            <div class="mb-4">
-        <label class="form-label"><i class="fab fa-css3-alt me-2 text-primary"></i>CSS</label>
-        <div class="progress">
-          <div class="progress-bar bg-info" style="width: 80%;">80%</div>
-        </div>
-      </div>
-      <div class="mb-4">
-        <label class="form-label"><i class="fab fa-js-square me-2 text-warning"></i>JavaScript</label>
-        <div class="progress">
-          <div class="progress-bar bg-warning text-dark" style="width: 70%;">70%</div>
-        </div>
-      </div>
-      <div class="mb-4">
-        <label class="form-label"><i class="fab fa-react me-2 text-info"></i>React</label>
-        <div class="progress">
-          <div class="progress-bar bg-info" style="width: 65%;">65%</div>
-        </div>
-      </div>
-      <div class="mb-4">
-        <label class="form-label"><i class="fab fa-java me-2 text-danger"></i>Java</label>
-        <div class="progress">
-          <div class="progress-bar bg-danger" style="width: 75%;">75%</div>
-        </div>
-      </div>
-      <div class="mb-4">
-        <label class="form-label"><i class="fas fa-leaf me-2 text-success"></i>Spring Boot</label>
-        <div class="progress">
-          <div class="progress-bar bg-success" style="width: 60%;">60%</div>
-        </div>
-      </div>
-      <div class="mb-4">
-        <label class="form-label"><i class="fas fa-paint-brush me-2 text-secondary"></i>Graphic Designing</label>
-        <div class="progress">
-          <div class="progress-bar bg-secondary" style="width: 70%;">70%</div>
-        </div>
-      </div>
-    </div>
+
+    <!-- === Contact Info === -->
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i> 157 Street, North Unguja, Zanzibar</li>
+        <li><i class="fas fa-phone-alt"></i> <a href="tel:+255777617786">+255 777 617 786</a></li>
+        <li><i class="fas fa-envelope"></i> <a href="mailto:info@mascomsafari.com">info@mascomsafari.com</a></li>
+      </ul>
+
+      <h3>Follow Me</h3>
+      <div class="social-links">
+        <a href="https://facebook.com/mrsolidy" target="_blank" class="tooltip" data-tooltip="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+       <a href="https://instagram.com/mrsolidy" target="_blank" class="tooltip" data-tooltip="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://twitter.com/mrsolidy" target="_blank" class="tooltip" data-tooltip="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://wa.me/255777617786" target="_blank" class="tooltip" data-tooltip="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
   </div>
 </div>
+  </div>
 </section>
-<!---- Footer ---->
-<footer class="d-flex text-center  mt-5 p-3">
-  <p class="text-center p01">©2025 <strong >MrSolidy</strong>. All rights are reserved</p>
-</footer>
-<!-- Sricpt JS -->
-<script src="assets/js/Script.js"></script>
-<!-- Bootstrap JS Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
-<script src="vendor/bootstrap/bootstrap.bundle.js"></script>
-<!-- AOS JS -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
+
+  <footer>
+    <p>© 2025 MrSolidy | Full Stack Developer</p>
+  </footer>
+
+  <!-- main js -->
+  <script src="assets/js/Script.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
     AOS.init();
-</script>
+    // ======== FORM HANDLER (example stub) ========
+    document.getElementById("orderForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Your project request has been submitted successfully!");
+      this.reset();
+    });
+  </script>
 </body>
 </html>
