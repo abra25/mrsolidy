@@ -14,10 +14,17 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body {
-  color: #333;
-  background-color: #f9fafb;
-  line-height: 1.6;
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.content{
+    display: none;
 }
 
 a {
