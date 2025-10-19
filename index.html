@@ -14,7 +14,8 @@
 <body>
 
   <!-- ======== NAVBAR ======== -->
-<header class="navbar">
+<!-- ======== NAVBAR ======== -->
+<header class="navbar" id="navbar">
   <div class="nav-container">
     <h1 class="logo">MrSolidy</h1>
 
@@ -37,6 +38,7 @@
   </div>
 </header>
 
+
   <!-- ======== HERO ======== -->
   <section class="hero">
     <h1>Hi, I'm <span style="color:#facc15;">Mr Solidy</span></h1>
@@ -49,6 +51,7 @@
   <!-- ======== ABOUT ======== -->
   <section id="about">
     <h2>About Me</h2>
+    <span class="section-subtitle">Passionate developer turning ideas into digital solutions</span>
     <p>
       I’m a full stack developer passionate about creating modern, efficient, and user-centered digital solutions.  
       I work on everything from design and front-end interfaces to robust back-end systems and cloud deployment.
@@ -58,6 +61,7 @@
   <!-- ======== SKILLS ======== -->
   <section id="skills">
     <h2>My Skills</h2>
+    <span class="section-subtitle">Technical expertise I bring to every project</span>
     <div class="skills-container">
       <div class="skill-item"><div class="skill-name"><span>HTML</span><span>98%</span></div><div class="progress-bar"><div class="progress" data-width="98%"></div></div></div>
       <div class="skill-item"><div class="skill-name"><span>CSS</span><span>95%</span></div><div class="progress-bar"><div class="progress" data-width="95%"></div></div></div>
@@ -75,6 +79,7 @@
   <!-- ======== SERVICES ======== -->
   <section id="services">
     <h2>My Services</h2>
+    <span class="section-subtitle">High-quality solutions tailored to your needs</span>
     <div class="services-grid">
       <div class="service-card">
         <h4>Website Development</h4>
@@ -102,7 +107,7 @@
   <!-- ======== PROJECTS (RESPONSIVE 4-CARD SLIDER) ======== -->
 <section id="projects">
   <h2>My Projects</h2>
-
+  <span class="section-subtitle">Showcasing my work and innovative solutions</span>
   <div class="slider-container">
     <div class="slider">
       <!-- Project 1 -->
@@ -111,7 +116,7 @@
           <img src="assets/images/project-1.PNG" alt="Project 1" />
           <div class="content">
             <h4>Websites</h4>
-            <p>A responsive Tour website showcasing various tours and safari located in Tanzania.</p>
+            <p>A responsive Tour website showcasing various tours and safaris in Tanzania.</p>
             <a href="https://mascomsafari.netlify.app/" target="_blank">View Project</a>
           </div>
         </div>
@@ -147,7 +152,7 @@
           <img src="assets/images/project-4.PNG" alt="Project 4" />
           <div class="content">
             <h4>Web Application</h4>
-            <p>A customer support help desk app for ticket management. Zeco Help desk</p>
+            <p>A customer support help desk app for ticket management (Zeco Help Desk).</p>
             <a href="#" target="_blank">View Project</a>
           </div>
         </div>
@@ -159,7 +164,7 @@
           <img src="assets/images/project-5.PNG" alt="Project 5" />
           <div class="content">
             <h4>React App</h4>
-            <p>Modern SPA built with React and API integration.Local Market Price Tracker</p>
+            <p>Modern SPA built with React and API integration (Local Market Price Tracker).</p>
             <a href="#" target="_blank">View Project</a>
           </div>
         </div>
@@ -177,8 +182,8 @@
 
   <!-- ======== CONTACT / ORDER SECTION ======== -->
 <section id="contact" class="contact-section">
-  <h2>Request a Project / Order</h2>
-
+  <h2>Request a Project</h2>
+  <span class="section-subtitle">Let’s bring your ideas to life</span>
   <div class="contact-container">
     <!-- === Order Form === -->
     <div class="contact-form">
@@ -225,9 +230,31 @@
   </div>
 </section>
 
+<!-- Theme Toggle Button -->
+<div class="theme-toggle" id="themeToggle">
+  <i class="fas fa-sun"></i>
+  <div class="theme-dropdown" id="themeDropdown">
+    <div class="theme-option" data-theme="light">
+      <i class="fas fa-lightbulb"></i> Light
+    </div>
+    <div class="theme-option" data-theme="dark">
+      <i class="fas fa-moon"></i> Dark
+    </div>
+    <div class="theme-option" data-theme="normal">
+      <i class="fas fa-adjust"></i> Normal
+    </div>
+  </div>
+</div>
+
+  
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Go to top">&#8679;</button>
+
   <footer>
     <p>© 2025 MrSolidy | Full Stack Developer</p>
   </footer>
+
+
 
   <!-- main js -->
   <script src="assets/js/Script.js"></script>
